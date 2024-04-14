@@ -65,7 +65,7 @@ body {
   position: relative;
   flex-direction: column;
   row-gap: 16px;
-  max-width: 350px;
+  min-width: 350px;
   height: 250px;
   background: #ffffff;
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
@@ -107,33 +107,4 @@ body {
 }
 .blue {
   border-top: 4px solid var(--blue);
-}
-@media screen and (max-width: 450px) {
-  .header {
-    max-width: 311px;
-    margin-top: 85px;
-    margin-bottom: 75px;
-  }
-  .header h1,
-  .header span {
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.166667px;
-  }
-  .content {
-    min-width: 311px;
-    row-gap: 25px;
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-  .content p {
-    min-width: 254px;
-  }
-  .image {
-    width: 57px;
-    height: 57px;
-  }
-  .blue {
-    margin-bottom: 78px;
-  }
 }
