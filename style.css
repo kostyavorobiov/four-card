@@ -24,6 +24,7 @@ body {
   row-gap: 16px;
   align-items: center;
   margin-bottom: 64px;
+  margin-top: 80px;
 }
 .header h1 {
   max-width: 540px;
