@@ -1,0 +1,138 @@
+:root {
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+  --grey: #4d4f62;
+}
+body {
+  margin: 0 auto;
+  color: var(--grey);
+  font-family: "Poppins";
+  font-style: normal;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.header h1 {
+  max-width: 540px;
+  font-weight: 275;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+.header span {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+.header p {
+  max-width: 540px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.104167px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.main {
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.center {
+  flex-direction: column;
+  row-gap: 30px;
+}
+.content {
+  position: relative;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 350px;
+  height: 250px;
+  background: #ffffff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+}
+.content h3 {
+  position: relative;
+  padding-top: 32px;
+  padding-left: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.content p {
+  max-width: 285px;
+  padding-left: 32px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.cyan {
+  border-top: 4px solid var(--cyan);
+}
+.red {
+  border-top: 4px solid var(--red);
+}
+.orange {
+  border-top: 4px solid var(--orange);
+}
+.blue {
+  border-top: 4px solid var(--blue);
+}
+@media screen and (max-width: 376px) {
+  .header {
+    max-width: 311px;
+    margin-top: 85px;
+    margin-bottom: 75px;
+  }
+  .header h1,
+  .header span {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.166667px;
+  }
+  .content {
+    min-width: 311px;
+    row-gap: 25px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .content p {
+    min-width: 254px;
+  }
+  .image {
+    width: 57px;
+    height: 57px;
+  }
+  .blue {
+    margin-bottom: 78px;
+  }
+}
